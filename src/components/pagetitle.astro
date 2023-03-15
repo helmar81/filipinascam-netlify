@@ -1,0 +1,14 @@
+---
+const { align = "center" } = Astro.props;
+---
+
+<div class:list={[align === "center" && "text-center"]}>
+  <h1
+    class="text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-blue">
+    <slot name="title">Philippines</slot>
+  </h1>
+  <p class="text-lg mt-3 text-gray-600">
+    <slot name="desc"> <a href= "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"></a>
+    </slot>
+  </p>
+</div>

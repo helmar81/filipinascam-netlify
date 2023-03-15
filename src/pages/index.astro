@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import React from "react";
+
+
+import Footer from '../components/Footer.astro';
+
+import { Image, Picture } from '@astrojs/image/components';
+---
+
+<Layout title="Welcome to th Phillippines.">
+	
+	<main>
+		<h1> <span class="text-gradient">FilipinaScam</span></h1>
+		<p class="instructions">
+			It is very easy to contact Filipinas on <code>Tinder/Badoo</code> especially when you are already in the country.<br />
+			Some of them might be only interested <strong>in your money</strong>
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/documentation"
+				title="Scams"
+				body="I have captured the conversations and provide screenshots"
+			/>
+			<Card
+				href="/avoid"
+				title="Avoid"
+				body="There are several things you can do to avoid scams."
+			/>
+			<Card
+				href="family/"
+				title="Single-Moms"
+				body=" Filipina single moms face unique challenges."
+			/>
+			<Card
+				href="/contact"
+				title="Contact"
+				body="Come say hi to our amazing community. ❤️"
+			/>
+		</ul>	
+		
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
