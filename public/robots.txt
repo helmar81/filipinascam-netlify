@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://filipinascam.web.app/sitemap-index.xml
+Sitemap: http://filipinas.netlify.app/sitemap-index.xml
