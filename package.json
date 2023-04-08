@@ -1,5 +1,5 @@
 {
-  "name": "filipinascam5",
+  "name": "filipinas",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -20,7 +20,7 @@
     "astro": "^2.0.17",
     "astro-icon": "^0.8.0",
     "astro-imagetools": "^0.2.7",
-    "firebase-tools": "^0.1.6",
+    "firebase-tools": "^11.25.3",
     "flowbite": "^1.6.3",
     "google": "^2.1.0",
     "netlify-plugin-minify-html": "^0.3.1",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
-    "netlify-cli": "^13.2.2",
+    "netlify-cli": "^2.12.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
   }
